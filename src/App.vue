@@ -2,16 +2,8 @@
   <v-app>
     <v-app-bar app color="primary" dark>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      <v-toolbar-title>Vuetify Demo</v-toolbar-title>
+      <v-toolbar-title>Кнопка БАБЛО</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        color="secondary"
-        class="mr-2"
-        @click="goToDemo"
-      >
-        <v-icon left>mdi-view-dashboard</v-icon>
-        Демо компоненты
-      </v-btn>
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
@@ -118,8 +110,8 @@ const playSoundEffect = () => {
 
 const triggerConfetti = () => {
   confetti({
-    particleCount: 150,
-    spread: 70,
+    particleCount: 550,
+    spread: 80,
     origin: { y: 0.6 },
     colors: ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'],
     shapes: ['circle', 'square']
@@ -140,7 +132,7 @@ const goToDemo = () => {
 .balance-display {
   .balance-amount {
     color: #4caf50;
-    text-shadow: 0 8px rgba(76, 175, 80, 0.5);
+    text-shadow: 0 8px rgba(89, 90, 89, 0.15);
   }
 }
 
@@ -155,7 +147,7 @@ const goToDemo = () => {
 }
 
 .click-me-button {
-  font-size: 1.2rem;
-  padding: 12px 24px;
+  font-size: 1.3rem;
+  padding: 22px 24px;
 }
 </style>
